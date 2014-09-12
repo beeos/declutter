@@ -30,7 +30,7 @@
       npm: path=/vagrant
 
     - name: bower install
-      shell: 'sudo -u vagrant sh -c "cd /vagrant/; node_modules/.bin/bower"'
+      shell: 'cd /vagrant/; node_modules/.bin/bower --allow-root install'
 
     - name: Copy upstart script
       shell: 'cp /vagrant/dev/declutter_upstart /etc/init/declutter.conf'
