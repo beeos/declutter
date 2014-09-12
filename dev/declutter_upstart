@@ -1,0 +1,17 @@
+#!upstart
+description "node.js server"
+author      "me"
+
+script
+    echo $$ > /var/run/declutter.pid
+    exec sudo -u vagrant /usr/bin/node /vagrant/app.js >> /var/log/declutter.log 2>&1
+end script
+
+pre-start script
+    echo "[`date -u +%Y-%m-%dT%T.%3NZ`] (sys) Starting" >> /var/log/declutter.log
+end script
+
+pre-stop script
+    rm /var/run/yourprogram.pid
+    echo "[`date -u +%Y-%m-%dT%T.%3NZ`] (sys) Stopping" >> /var/log/declutter.log
+end script
