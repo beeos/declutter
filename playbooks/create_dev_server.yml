@@ -11,6 +11,7 @@
       apt: pkg={{ item }} state=latest
       with_items:
         - python-pycurl
+        - git
 
     - name: Add node.js ppa repository
       apt_repository: repo='ppa:chris-lea/node.js'
@@ -27,6 +28,9 @@
 
     - name: npm install
       npm: path=/vagrant
+
+    - name: bower install
+      shell: 'cd /vagrant/; node_modules/.bin/bower --allow-root install'
 
     - name: Copy upstart script
       shell: 'cp /vagrant/dev/declutter_upstart /etc/init/declutter.conf'
