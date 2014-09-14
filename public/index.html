@@ -1,11 +1,23 @@
-<html ng-app>
-
+<html ng-app="App">
 <head>
     <script src="/angular/angular.min.js" type="text/javascript"></script>
+    <script src="/js/script.js" type="text/javascript"></script>
 </head>
 
-<body>
-{{ 1 + 2 }}
-</body>
+<body ng-controller="DeclutterCtrl">
 
+    <h2>New thing</h2>
+        <form>
+            name: <input type="input" ng-model="name"><br>
+            description: <input type="input" ng-model="description"><br>
+            <input type="submit" ng-click="addNewThing()" value="Add new thing"><br/>
+        </form>
+
+    <h2>List of all things</h2>
+        <div ng-repeat="t in allThings">
+        <h3>{{ t.name }}</h3>
+        description: {{ t.description }}<br/>
+        </div>
+
+</body>
 </html>
