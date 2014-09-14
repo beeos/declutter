@@ -46,5 +46,9 @@
     - name: Copy upstart script
       shell: 'cp /vagrant/dev/declutter_upstart /etc/init/declutter.conf'
 
+    - name: Stop server
+      shell: sudo stop declutter
+      ignore_errors: yes
+
     - name: Start server
       shell: sudo start declutter
