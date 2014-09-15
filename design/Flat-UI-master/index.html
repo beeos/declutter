@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Flat UI - Free Bootstrap Framework and Theme</title>
+    <meta name="description" content="Flat UI Kit Free is a Twitter Bootstrap Framework design and Theme, this responsive framework includes a PSD and HTML version."/>
+
+    <meta name="viewport" content="width=1000, initial-scale=1.0, maximum-scale=1.0">
+
+    <!-- Loading Bootstrap -->
+    <link href="dist/css/vendor/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Loading Flat UI -->
+    <link href="dist/css/flat-ui.css" rel="stylesheet">
+    <link href="docs/assets/css/demo.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <script src="../bower_components/typeahead.js/dist/typeahead.bundle.js"></script>
+    <script src="js/dropzone.js"></script>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="dist/js/vendor/html5shiv.js"></script>
+      <script src="dist/js/vendor/respond.min.js"></script>
+    <![endif]-->
+    <style>
+    p.calm a { font-weight: 300; text-decoration: underline;}
+    p.notice { color: #aaaaaa; padding-top: 0.2em;}
+    body {padding-top: 70px; background-color: @brand-primary;}
+    p.subheader { margin: -1em 0 2em 2em; font-size: larger; color: #16a085;}
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+
+          <div class="col-xs-12">
+            <nav class="navbar navbar-inverse navbar-embossed navbar-fixed-top" role="navigation">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-01">
+                  <span class="sr-only">Toggle navigation</span>
+                </button>
+                <a class="navbar-brand" href="#"><span class="fui-export"></span> &nbsp;Declutter</a>
+              </div>
+              <div class="collapse navbar-collapse" id="navbar-collapse-01">
+                <ul class="nav navbar-nav navbar-left">
+                  <li><a href="#fakelink">My Things<span class="navbar-unread">1</span></a></li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Browse Things <b class="caret"></b></a>
+                    <span class="dropdown-arrow"></span>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Most Recent</a></li>
+                      <li><a href="#">By Category</a></li>
+                      <li><a href="#">By Owner</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">Get Lucky!</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#fakelink">What's going on?</a></li>
+                 </ul>
+                 <form class="navbar-form navbar-right" action="#" role="search">
+                  <div class="form-group">
+                    <div class="input-group">
+                      <input class="form-control" id="navbarInput-01" type="search" placeholder="Search">
+                      <span class="input-group-btn">
+                        <button type="submit" class="btn"><span class="fui-search"></span></button>
+                      </span>
+                    </div>
+                  </div>
+                </form>
+              </div><!-- /.navbar-collapse -->
+            </nav><!-- /navbar -->
+          </div>
+
+      </div> <!-- /container -->
+    </header>
+    <div class="container">
+      <h1>Get rid of everything</h1>
+      <p class="subheader">you don't actually need</p>
+          <div class="col-sm-12">
+            <form class="form-horizontal" role="form">
+              <div class="form-group form-group-lg">
+                <label class="col-sm-3 control-label" for="formGroupInputLarge">What is it?</label>
+                <div class="col-sm-9">
+                  <input class="form-control" type="text" id="formGroupInputLarge" placeholder="e.g. Awesome sportbike">
+                </div>
+              </div>
+              <div class="form-group form-group-lg">
+                <label class="col-sm-3 control-label" for="tagsinput">Category</label>
+                <div class="col-sm-9">
+                  <div class="tagsinput-primary">
+                    <input name="tagsinput" class="tagsinput tagsinput-typeahead" value="Bikes"/>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group form-group-lg">
+                <label class="col-sm-3 control-label" for="description">Some photo</label>
+                <div class="btn-group col-sm-9">
+                  <button class="btn dropzone" id="dzfile">Drop your files here</button>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3 control-label" for="description">Description</label>
+                <div class="col-sm-9">
+                    <textarea name="description" class="form-control" rows="3"></textarea>
+                </div>
+              </div>
+              <div class="form-group form-group-lg">
+                <label class="col-sm-3 control-label" for="description">How do I feel about it?</label>
+                <div class="btn-group col-sm-9">
+                  <input type="checkbox" data-toggle="switch" name="default-switch-colors" data-on-color="primary" data-off-color="default" data-on-text="give" data-off-text="hold" id="switch-03" />
+                </div>
+              </div>
+            </form>
+          </div>
+        <div class="row-demo">
+          <div class="col-xs-12">
+            <br/><center><button class="btn btn-hg btn-inverse btn-embossed">&nbsp;&nbsp;&nbsp;&nbsp;Save to my list&nbsp;&nbsp;&nbsp;&nbsp;</button></center><br/>
+          </div>
+        </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-7">
+            <h3 class="footer-title">About this project</h3>
+            <p><em>Declutter</em> project is about clean simplicity of everyday life. It's about meaning, not about the things. Things are only facilities of achieving your goals.<br/>
+              Focus on your goals and use least of most perfect. Throw other away.</p>
+              <p>Everything above was made by: <a href="http://kalinnikov.ru">beeos</a> &amp; <a href="http://bessarabov.ru">bessarabov</a></p>
+              <p class="calm">We use <a href="#">vagrant</a>, <a href="#">express</a>, <a href="#">angular.js</a>, <a href="#">node.js</a>, <a href="#">mysql</a>, <a href="#">Flat UI</a> and some pure magic.</p>
+            </p>
+          </div> <!-- /col-xs-7 -->
+
+          <div class="col-xs-5">
+            <div class="footer-banner">
+              <h3 class="footer-title"><span class="fui-export white"></span>&nbsp;Declutter</h3>
+              <ul>
+                <li><a href="/mythings">Make a list</a> of <strong>all</strong> your things</li>
+                <li>Use <a href="#">«Give!»</a> action and it's options</li>
+                <li>Share things with community</li>
+                <li>Get profit! Have fun!</li>
+              </ul>
+              Go to: <a href="http://declutter.ru" target="_blank">declutter.ru</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="dist/js/vendor/jquery.min.js"></script>
+    <script src="dist/js/flat-ui.min.js"></script>
+    <script src="docs/assets/js/application.js"></script>
+
+    <script>
+      videojs.options.flash.swf = "dist/js/vendors/video-js.swf"
+    </script>
+
+    <script>
+
+      var states = new Bloodhound({
+        datumTokenizer: function(d) { return Bloodhound.tokenizers.whitespace(d.word); },
+        queryTokenizer: Bloodhound.tokenizers.whitespace,
+        limit: 4,
+        local: [
+          { word: "Bikes" },
+          { word: "Transport" },
+          { word: "Leisure" },
+          { word: "Sports" },
+          { word: "Spare time" },
+          { word: "Computers" }
+        ]
+      });
+
+      states.initialize();
+
+      $('input.tagsinput').tagsinput();
+
+      $('input.tagsinput-typeahead').tagsinput('input').typeahead(null, {
+        name: 'states',
+        displayKey: 'word',
+        source: states.ttAdapter()
+      });
+
+    </script>
+
+    <script type="text/javascript">
+      var myDropzone = new Dropzone("div#dzfile", { url: "/file/post"});
+    </script>
+
+  </body>
+</html>
